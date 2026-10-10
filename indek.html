@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeae4;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+
+        .cv {
+            max-width: 800px;
+            margin: auto;
+            padding: 35px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 3px solid #a58b6b;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            color: #514536;
+        }
+
+        header p {
+            color: #777;
+        }
+
+        /* FOTO PROFIL */
+        .foto {
+            width: 110px;
+            height: 140px;
+            object-fit: cover;
+            object-position: center top;
+            border: 2px solid #a58b6b;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .konten {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+            margin-top: 25px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 17px;
+            color: #514536;
+            border-bottom: 1px solid #c8b8a4;
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .data p {
+            margin: 8px 0;
+        }
+
+        .tahun {
+            color: #8b7965;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .cv {
+                padding: 20px;
+            }
+
+            .konten {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            .foto {
+                width: 90px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <!-- HEADER DAN FOTO PROFIL -->
+        <header>
+            <div>
+                <h1>NAMA LENGKAP</h1>
+                <p>CURRICULUM VITAE</p>
+            </div>
+
+            <!-- FOTO PROFIL KAMU -->
+            <img
+                src="foto profil mahasiswa.jpeg"
+                alt="Foto Profil Saya"
+                class="foto"
+            >
+        </header>
+
+        <div class="konten">
+
+            <!-- KOLOM KIRI -->
+            <main>
+
+                <section>
+                    <h2>Profil Singkat</h2>
+                    <p>
+                        Saya adalah mahasiswa yang disiplin,
+                        bertanggung jawab, dan memiliki semangat
+                        belajar yang tinggi. Saya tertarik pada
+                        teknologi informasi dan pemrograman.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Data Pribadi</h2>
+                    <div class="data">
+                        <p><b>Nama:</b> Muhammad Ibrahim Zidane Al Fattah</p>
+                        <p><b>Tempat, Tanggal Lahir:</b> Ponorogo, 10 juli 2006</p>
+                        <p><b>Alamat:</b> Jalan Madura no.44</p>
+                        <p><b>Telepon:</b> 081231897345</p>
+                        <p><b>Email:</b> zidaneibrahim@gmail.com</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Pendidikan</h2>
+
+                    <h3>Universitas Muhammadiyah Ponorogo</h3>
+                    <p class="tahun">2025 - Sekarang</p>
+                    <p>S1 Teknik Informatika</p>
+
+                    <h3>SMA / SMK</h3>
+                    <p class="tahun">2022 - 2025</p>
+                    <p>SMK PGRI 2 Ponorogo</p>
+                </section>
+
+                <section>
+                    <h2>Pengalaman</h2>
+                    <h3>Proyek Pemrograman</h3>
+                    <p>
+                        Membuat halaman website sederhana
+                        menggunakan HTML dan CSS untuk tugas kuliah.
+                    </p>
+                </section>
+
+            </main>
+
+            <!-- KOLOM KANAN -->
+            <aside>
+
+                <section>
+                    <h2>Keahlian</h2>
+                    <ul>
+                        <li>HTML dan CSS</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Kerja Sama Tim</li>
+                        <li>Komunikasi</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Bahasa</h2>
+                    <ul>
+                        <li>Bahasa Indonesia</li>
+                        <li>Bahasa Inggris Dasar</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Hobi</h2>
+                    <ul>
+                        <li>Belajar Teknologi</li>
+                        <li>Membaca</li>
+                        <li>Belajar Pemrograman</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Kontak</h2>
+                    <p>Email: zidaneibrahim@gmail.com</p>
+                    <p>Telepon: 081231897345</p>
+                    <p>Domisili: Ponorogo Jawa Timur</p>
+                </section>
+
+            </aside>
+        </div>
+
+        <footer>
+            Curriculum Vitae &copy; 2026
+        </footer>
+
+    </div>
+
+</body>
+</html>
